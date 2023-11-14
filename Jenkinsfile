@@ -8,7 +8,7 @@ pipeline { // Defines a pipeline
   stages { // Defines the different stages of the pipeline
     stage('Checkout Source') { // Defines the 'Checkout Source' stage
       steps { // Specifies the steps to be executed within this stage
-        git 'https://github.com/MarwenSoula/javulna.git' // Retrieves the source code from the specified GitHub repository
+        git 'https://github.com/jouablia/javulna.git' // Retrieves the source code from the specified GitHub repository
       }
     }
     
@@ -20,7 +20,7 @@ pipeline { // Defines a pipeline
 
     stage ('Build') { // Defines the 'Build' stage
       steps { // Specifies the steps to be executed within this stage
-        sh 'mvn clean install' // Runs the Maven command to clean and build the project
+        sh 'mvn  install' // Runs the Maven command to clean and build the project
       }   
     }
 
